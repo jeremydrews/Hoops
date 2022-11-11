@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/menu.css">
+        <title>Menu</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+    <body> 
+        <nav>
+            <ul class="dropdown-nav">
+                <li>
+                    <a href="accessories.html">Accessories</a>
+                    <ul class="sub">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="shoes.html">Shoes</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".dropdown-nav li").hover(
+                    function() {
+                        $('ul.sub', this).slideDown(200);
+                    },
+                    function() {
+                        $('ul.sub', this).slideUp(200);
+                    },
+                )
+            })
+        </script>
+        <div class="spacing"></div>
+        <main>
+            <div class="items">
+                <a href="purchase.html?productId=1">
+                    <div class="item">
+                        <img src="assets/foto1.jpg" alt="">
+                        <h3>Basket Ball</h3>
+                        <p>Rp. 150.000</p>
+                    </div>
+                </a>
+                <a href="purchase.html?productId=3">
+                    <div class="item">
+                        <img src="assets/foto3.jpg" alt="">
+                        <h3>Hoops Jersey</h3>
+                        <p>Rp. 150.000</p>
+                    </div>
+                </a>
+                <a href="purchase.html?productId=4">
+                    <div class="item">
+                        <img src="assets/foto4.jpg" alt="">
+                        <h3>Knee Support</h3>
+                        <p>Rp. 100.000</p>
+                    </div>
+                </a>
+                <a href="purchase.html?productId=5">
+                    <div class="item">
+                        <img src="assets/foto5.jpg" alt="">
+                        <h3>Hand Band</h3>
+                        <p>Rp. 75.000</p>
+                    </div>
+                </a>
+                <a href="purchase.html?productId=7">
+                    <div class="item">
+                        <img src="assets/foto7.jpg" alt="">
+                        <h3>Hoops Jacket</h3>
+                        <p>Rp. 200.000</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <span>Copyright &copy; 2021</span>
+        </footer>
+    </body>
+</html>

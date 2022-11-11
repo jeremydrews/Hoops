@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="./css/faq.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <nav>
+        <ul class="dropdown-nav">
+            <li>
+                <a href="faq.html">FAQ</a>
+                <ul class="sub">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="shoes.html">Shoes</a></li>
+                    <li><a href="accessories.html">Accessories</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+      <script>
+        $(function() {
+            $(".dropdown-nav li").hover(
+                function() {
+                    $('ul.sub', this).slideDown(200);
+                },
+                function() {
+                    $('ul.sub', this).slideUp(200);
+                },
+            )
+        })
+    </script>
+    <div class="spacing"></div>
+      <p class="title">FAQ</p>
+      <div class="faq-content">
+          <div>
+              <b>Q :</b> How to buy a product ?<br>
+              <b>A :</b> Press the product you want to buy, a form will appear and fill it out.
+          </div>
+          <div>
+              <b>Q :</b> What if my product that i bought hasn't arrived and there is no news about that ?<br>
+              <b>A :</b> The first possibility is that the product has been received but we haven't updated it yet.
+              Usually we update the same day or one after the product is received.
+        </div>
+        <div>
+              <b>Q :</b> What if the item received is damaged ?<br>
+              <b>A :</b> You can come to our nearest store with a shopping receipt and the damage also has terms and condition.
+        </div>
+        <div>
+              <b>Q :</b> What if we have paid for the product and want to change the product ?<br>
+              <b>A :</b> You cannot change the product if you have confirmed and paid for the product.
+        </div>    
+      </div>
+      <footer>
+            <span>Copyright &copy; 2021</span>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/purchase.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/purchase.js" defer></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="dropdown-nav">
+        <li>
+            <a href="home.html">Home</a>
+            <ul class="sub">
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="accessories.html">Accessories</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+    </ul>
+  </nav>
+  <script>
+    $(function() {
+        $(".dropdown-nav li").hover(
+            function() {
+                $('ul.sub', this).slideDown(200);
+            },
+            function() {
+                $('ul.sub', this).slideUp(200);
+            },
+        )
+    })
+</script>
+    <div class="product-detail">
+      <img src="" alt="" id="product">
+    </div>
+    
+    <fieldset>
+      <form action="" name="personalInformation">
+        <p class="form-title">Personal Information</p>
+
+        <div>
+          <label for="name">Name</label><br>
+          <input type="text" name="" id="name"><br>
+        </div>
+        
+        <div>
+          <label for="phonenumber">Phone Number</label><br>
+          <input type="text" name="" id="phonenumber"><br>
+        </div>
+
+        <div>
+          <label for="email">Email</label><br>
+          <input type="email" name="" id="email"><br>
+        </div>
+        
+        <p>Gender</p>
+
+        <div>
+          <input type="radio" name="gender" id="maleBtn" value="male">
+          <label for="male">Male</label><br>
+          <input type="radio" name="gender" id="femaleBtn" value="female">
+          <label for="female">Female</label><br>
+        </div>
+        
+        <div>
+          <label for="age">Age</label><br>
+          <input type="number" id="age" name=""><br>
+        </div>
+        
+        <div>
+          <label for="district">District</label><br>
+          <input type="text" name="" id="district"><br>
+        </div>
+        
+        <div>
+          <label for="address">Address</label><br>
+          <textarea name="" id="address" cols="30" rows="10"></textarea><br>
+        </div>
+
+        <div>
+          <label for="notes">Additional Notes</label><br>
+        <textarea name="" id="notes" cols="30" rows="10"></textarea><br>
+        </div>
+        
+        <div>
+          <label id="errorLabel"></label>
+        </div>
+        
+        <div>
+          <button id="submitButton">Submit</button>
+        </div>
+      </form>
+    </fieldset>
+    <footer>
+      <span>Copyright &copy; 2021</span>
+  </footer>
+</body>
+</html>

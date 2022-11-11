@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/menu.css">
+        <title>Menu</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="./js/shoes.js" async></script>
+    </head>
+    <body>   
+        <nav>
+            <ul class="dropdown-nav">
+                <li>
+                    <a href="shoes.html">Shoes</a>
+                    <ul class="sub">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="accessories.html">Accessories</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".dropdown-nav li").hover(
+                    function() {
+                        $('ul.sub', this).slideDown(200);
+                    },
+                    function() {
+                        $('ul.sub', this).slideUp(200);
+                    },
+                )
+            })
+        </script>
+        <div class="spacing"></div>
+        <main>
+            <div class="items">
+                <a href="purchase.html?productId=2">
+                <div class="item">
+                    <img src="assets/foto2.jpg" alt="">
+                    <h3>Hoops Dunk 1</h3>
+                    <p>Rp. 250.000</p>
+                </div>
+                </a>
+                <a href="purchase.html?productId=6" id="productId">
+                    <div class="item">
+                        <img src="assets/foto6.jpg" alt="">
+                        <h3>Hoops Dunk 2</h3>
+                        <p>Rp. 250.000</p>
+                    </div>
+                </a>
+                <a href="purchase.html?productId=8" id="productId">
+                    <div class="item">
+                        <img src="assets/foto8.jpg" alt="">
+                        <h3>Hoops Dunk 3</h3>
+                        <p>Rp. 300.000</p>
+                    </div>
+                </a>
+                <a href="purchase.html?productId=9" id="productId">
+                    <div class="item">
+                        <img src="assets/foto9.jpg" alt="">
+                        <h3>Hoops Dunk 4</h3>
+                        <p>Rp. 300.000</p>
+                    </div>
+                </a>
+                <a href="purchase.html?productId=10" id="productId">
+                    <div class="item">
+                        <img src="assets/foto10.jpg" alt="">
+                        <h3>Hoops Dunk 5</h3>
+                        <p>Rp. 300.000</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <span>Copyright &copy; 2021</span>
+        </footer>
+    </body>
+</html>
